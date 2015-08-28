@@ -1,7 +1,18 @@
-﻿
+import {Router} from 'aurelia-router';
+import {RouterConfiguration} from 'aurelia-router';
 
-import {Greeter} from 'greeter'
+export class App {
+	router:Router;
 
-var el = document.getElementById('content');
-var greeter = new Greeter(el);
-greeter.start();
+  configureRouter(config: RouterConfiguration, router:Router){
+    config.title = 'Aurelia';
+    config.map([
+      { route: ['','welcome'],  moduleId: './welcome',      nav: true, title:'Welcome' },
+      { route: 'flickr',        moduleId: './flickr',       nav: true },
+      { route: 'esri-map',        moduleId: './esri-map',       nav: true, title:'ESRI Map' },
+      { route: 'child-router',  moduleId: './child-router', nav: true, title:'Child Router' }
+    ]);
+
+    this.router = router;
+  }
+}

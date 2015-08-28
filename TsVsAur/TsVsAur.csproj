@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="app.html" />
     <Content Include="index.html" />
     <Content Include="jspm_packages\.loaderversions" />
     <Content Include="jspm_packages\github\aurelia\binding%400.8.6.js" />
@@ -808,6 +809,7 @@
     <TypeScriptCompile Include="jspm_packages\github\aurelia\task-queue%400.6.2\aurelia-task-queue.d.ts" />
     <TypeScriptCompile Include="jspm_packages\github\aurelia\templating%400.14.4\aurelia-templating.d.ts" />
     <TypeScriptCompile Include="jspm_packages\github\aurelia\templating-binding%400.14.0\aurelia-templating-binding.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\core-js\core-js.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="jspm_packages\github\aurelia\binding%400.8.6\.jspm-hash" />
@@ -889,6 +891,7 @@
     <Content Include="jspm_packages\npm\process%400.10.1\LICENSE" />
     <Content Include="jspm_packages\npm\process%400.10.1\package.json" />
     <Content Include="jspm_packages\npm\process%400.10.1\README.md" />
+    <Content Include="packages.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
